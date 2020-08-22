@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --footer-height: 40px;
+}
+
+body {
+  background: steelblue;
+}
+
+main {
+  min-height: calc(100vh - var(--footer-height) * 2);
+  display: flex;
+}
+
+main div {
+  flex: 1 1 auto;
+}
+
+main div:first-child {
+  background: crimson;
+}
+
+main div:nth-child(2) {
+  background: purple;
+}
+
+main div:last-child {
+  background: gold;
+}
+
+nav, footer {
+  height: var(--footer-height);
+  text-align: center;
+  color: ghostwhite;
+}
